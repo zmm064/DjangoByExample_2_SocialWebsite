@@ -57,7 +57,7 @@ def edit(request):
         else:
             messages.error(request, 'Error updating your profile')
     else:
-        messages.success(request, 'Error updating your profile')
+        #messages.success(request, 'Error updating your profile')
         # 传入对象实例
         user_form = UserEditForm(instance=request.user)
         profile_form = ProfileEditForm(instance=request.user.profile)
