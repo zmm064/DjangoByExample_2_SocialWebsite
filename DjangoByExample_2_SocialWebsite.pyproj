@@ -36,6 +36,7 @@
     </Compile>
     <Compile Include="account\migrations\__init__.py" />
     <Compile Include="account\models.py" />
+    <Compile Include="account\authentication.py" />
     <Compile Include="account\tests.py" />
     <Compile Include="account\urls.py">
       <SubType>Code</SubType>

@@ -157,3 +157,12 @@ EMAIL_USE_TLS= True
 #EMAIL_HOST_PASSWORD = get_env_variable('EMAIL_HOST_PASSWORD')
 #EMAIL_USE_TLS = False
 #EMAIL_FROM = '1542904808@qq.com'
+
+AUTHENTICATION_BACKENDS = (
+    #'social.backends.facebook.Facebook2OAuth2',
+    #'social.backends.google.GoogleOAuth2',
+    #'social.backends.twitter.TwitterOAuth',
+
+    'django.contrib.auth.backends.ModelBackend',
+    'account.authentication.EmailAuthBackend',
+)
