@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'account',
     'django.contrib.admin',
+    #'social.apps.django_app.default',
+    'images',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -165,4 +167,9 @@ AUTHENTICATION_BACKENDS = (
 
     'django.contrib.auth.backends.ModelBackend',
     'account.authentication.EmailAuthBackend',
+
+    'social.backends.google.GoogleOAuth2',
 )
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '520762793683-jn2ijsrej46bibd83oosqul86phj8hsv.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'rZXKB67UY2m5eI2w0GHsR3OI'
